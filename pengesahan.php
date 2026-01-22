@@ -1,4 +1,3 @@
-<!-- pengesahan.php -->
 <?php
 $nama = $_POST['nama'];
 $email = $_POST['email'];
@@ -14,22 +13,20 @@ $jumlah = $slot * $harga_unit;
 <head>
     <meta charset="UTF-8">
     <title>Pengesahan Pendaftaran</title>
-    <style>
-        body { font-family: Arial; padding: 20px; }
-        h1 { color: #5a3e36; }
-        .detail { margin-top: 20px; }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- reuse CSS dari landing page -->
 </head>
 <body>
-    <h1>Pengesahan Pendaftaran</h1>
-    <div class="detail">
-        <p><strong>Nama:</strong> <?= $nama ?></p>
-        <p><strong>Email:</strong> <?= $email ?></p>
-        <p><strong>Telefon:</strong> <?= $telefon ?></p>
-        <p><strong>Kategori:</strong> <?= $kategori ?></p>
-        <p><strong>Bilangan Slot:</strong> <?= $slot ?></p>
-        <p><strong>Jumlah Yuran:</strong> RM <?= number_format($jumlah, 2) ?></p>
-        <p>Terima kasih kerana mendaftar! Sila simpan bukti pembayaran anda.</p>
-    </div>
+
+<div class="form-box">
+    <h2>Pengesahan Pendaftaran</h2>
+    <p><strong>Nama:</strong> <?= $nama ?></p>
+    <p><strong>Email:</strong> <?= $email ?></p>
+    <p><strong>Telefon:</strong> <?= $telefon ?></p>
+    <p><strong>Kategori:</strong> <?= $kategori ?></p>
+    <p><strong>Bilangan Slot:</strong> <?= $slot ?></p>
+    <p><strong>Jumlah Yuran:</strong> RM <?= number_format($jumlah, 2) ?></p>
+    <p>Terima kasih kerana mendaftar! Sila simpan bukti pembayaran anda.</p>
+</div>
+
 </body>
 </html>

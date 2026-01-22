@@ -3,43 +3,60 @@ body {
     background-color: #fff8f0;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
-header {
-    background-color: #5a3e36;
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
-}
-
-section {
+/* Kotak utama info ceramah */
+.info-box {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto 30px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-h2 {
+.info-box h1 {
+    text-align: center;
     color: #5a3e36;
 }
 
-img {
-    max-width: 200px;
+.info-box h2 {
+    color: #5a3e36;
+    margin-top: 20px;
+}
+
+.info-box img {
+    max-width: 150px;
     display: block;
     margin: 10px auto;
     border-radius: 50%;
 }
 
-form input, form select {
+/* Kotak borang */
+.form-box {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #5a3e36;
+}
+
+.form-box form input,
+.form-box form select {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
+    margin-bottom: 15px;
 }
 
-form input[type="submit"] {
+.form-box form input[type="submit"] {
     background-color: #5a3e36;
     color: white;
     border: none;
@@ -47,6 +64,6 @@ form input[type="submit"] {
     cursor: pointer;
 }
 
-form input[type="submit"]:hover {
+.form-box form input[type="submit"]:hover {
     background-color: #7b574b;
 }
