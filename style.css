@@ -1,3 +1,4 @@
+/* Body */
 body {
     font-family: Arial, sans-serif;
     background-color: #fff8f0;
@@ -6,8 +7,8 @@ body {
     padding: 20px;
 }
 
-/* Kotak utama info ceramah */
-.info-box {
+/* Kotak info & kotak borang sama saiz */
+.info-box, .form-box {
     max-width: 800px;
     margin: 0 auto 30px auto;
     padding: 20px;
@@ -16,7 +17,7 @@ body {
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-.info-box h1 {
+.info-box h1, .form-box h2 {
     text-align: center;
     color: #5a3e36;
 }
@@ -33,21 +34,7 @@ body {
     border-radius: 50%;
 }
 
-/* Kotak borang */
-.form-box {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-
-.form-box h2 {
-    text-align: center;
-    color: #5a3e36;
-}
-
+/* Borang */
 .form-box form input,
 .form-box form select {
     width: 100%;
@@ -66,4 +53,11 @@ body {
 
 .form-box form input[type="submit"]:hover {
     background-color: #7b574b;
+}
+
+p em {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: #777;
 }
