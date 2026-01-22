@@ -13,7 +13,7 @@ $jumlah = $slot * $harga_unit;
 <head>
     <meta charset="UTF-8">
     <title>Pengesahan Pendaftaran</title>
-    <link rel="stylesheet" href="style.css"> <!-- reuse CSS dari landing page -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
