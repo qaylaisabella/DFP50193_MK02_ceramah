@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Ceramah Berbayar</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <center>
+        <h1>Ceramah Inspirasi: Cara Tingkatkan Kemahiran Profesional</h1>
+        <hr width="50%">
+    </center>
+
+    <!-- Penceramah -->
+    <h2>Penceramah</h2>
+    <center>
+        <img src="penceramah.jpg" alt="Foto Penceramah" width="200">
+    </center>
+    <ul>
+        <li>Nama: Dr. Ahmad Faizal</li>
+        <li>Gelaran: Pensyarah Kanan</li>
+        <li>Kepakaran: Pembangunan Profesional & Motivasi</li>
+    </ul>
+
+    <!-- Sinopsis -->
+    <h2>Sinopsis</h2>
+    <p>Peserta akan mempelajari strategi untuk meningkatkan kemahiran profesional, teknik komunikasi berkesan, dan membina rangkaian yang kukuh dalam kerjaya.</p>
+    <p><em>*Nota: Ceramah ini dijamin tak mengajar awak tidur… kecuali awak suka tidur kelas 😴*</em></p>
+
+    <!-- Logistik -->
+    <h2>Logistik</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Tarikh</th>
+            <td>1 Februari 2026</td>
+        </tr>
+        <tr>
+            <th>Masa</th>
+            <td>9:00 AM - 1:00 PM</td>
+        </tr>
+        <tr>
+            <th>Lokasi</th>
+            <td>Dewan Seminar, Politeknik Tuanku Syed Sirajuddin</td>
+        </tr>
+    </table>
+
+    <!-- Yuran -->
+    <h2>Yuran</h2>
+    <p>RM 2,500.00 / slot <br>
+    <em>(Kalau bayar guna kertas Monopoly, mungkin kena reject 😆)</em></p>
+
+    <!-- Hubungi -->
+    <h2>Hubungi Kami</h2>
+    <p>Email: info@politeknik.edu.my<br>
+       Telefon: 04-979 1097</p>
+
+    <!-- Borang Pendaftaran -->
+    <h2>Daftar Sekarang</h2>
+    <form action="pengesahan.php" method="post" enctype="multipart/form-data">
+        <p>Nama Penuh:<br>
+        <input type="text" name="nama" required></p>
+
+        <p>Alamat E-mel:<br>
+        <input type="email" name="email" required></p>
+
+        <p>Nombor Telefon:<br>
+        <input type="text" name="telefon" required></p>
+
+        <p>Kategori Peserta:<br>
+        <select name="kategori" required>
+            <option value="">--Pilih--</option>
+            <option value="Pelajar">Pelajar</option>
+            <option value="Pensyarah">Pensyarah</option>
+            <option value="Orang Awam">Orang Awam</option>
+            <option value="Korporat">Korporat</option>
+        </select></p>
+
+        <p>Bilangan Slot:<br>
+        <input type="number" name="slot" min="1" required></p>
+
+        <p>Bukti Pembayaran:<br>
+        <input type="file" name="bukti" accept=".jpg,.png,.pdf" required></p>
+
+        <p>
+        <input type="checkbox" name="terma" required> Saya bersetuju dengan Terma & Syarat
+        </p>
+
+        <p><input type="submit" value="Hantar"></p>
+    </form>
+
+</body>
+</html>
