@@ -4,7 +4,7 @@ $email = $_POST['email'];
 $telefon = $_POST['telefon'];
 $kategori = $_POST['kategori'];
 $slot = $_POST['slot'];
-$harga_unit = 2500;
+$harga_unit = 250;
 $jumlah = $slot * $harga_unit;
 ?>
 
